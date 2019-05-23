@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>FastPS SFP $(P)$(R)</name>
+  <x>450</x>
+  <y>128</y>
+  <width>400</width>
+  <height>290</height>
+  <background_color>
+    <color name="GLOBAL canvas" red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>CAENels Fast-PS "$(P)$(R)"</text>
+    <y>1</y>
+    <width>400</width>
+    <height>28</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="green-19" red="0" green="128" blue="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>SFP Updates</text>
+    <y>28</y>
+    <width>400</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="green-19" red="0" green="128" blue="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>0</name>
+    <x>2</x>
+    <y>97</y>
+    <width>196</width>
+    <height>80</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>0</name>
+      <y>65</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)FAST:NONCE</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>Nonce</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>1</name>
+      <y>45</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)FAST:SETPOINT</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>Setpoint</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>2</name>
+      <y>25</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)FAST:CMD</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <format>4</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>Command</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>LAST CMD:</text>
+      <x>11</x>
+      <y>3</y>
+      <width>86</width>
+      <height>17</height>
+      <font>
+        <font family="helvetica" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM menu button</name>
+      <pv_name>$(P)$(R)_sfp_last_cmd_.SCAN</pv_name>
+      <x>95</x>
+      <width>101</width>
+      <height>21</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>Reset</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)SFP:RESET</pv_name>
+    <text>Reset</text>
+    <x>343</x>
+    <y>73</y>
+    <width>51</width>
+    <height>19</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P)$(R)SFP:RESET</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>1</name>
+    <x>29</x>
+    <y>55</y>
+    <width>194</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>0</name>
+      <x>171</x>
+      <width>23</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>EDM Ellipse</name>
+        <width>26</width>
+        <height>25</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Monitor: NORMAL" red="0" green="255" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="visibleRule" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0&amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)SFP:ADAPTER</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>EDM Ellipse</name>
+        <width>26</width>
+        <height>25</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Monitor: NORMAL" red="0" green="255" blue="0">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM Message Button</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>Disable</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)SFP:DISABLE</pv_name>
+      <text>Disable</text>
+      <width>66</width>
+      <height>26</height>
+      <font>
+        <font family="helvetica" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="widget.getValue() == 1">
+            <value>
+              <color name="cyan-31" red="0" green="224" blue="224">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="true">
+            <value>
+              <color name="cyan-31" red="0" green="224" blue="224">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(P)$(R)SFP:DISABLE</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM Message Button</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>Enable</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)SFP:ENABLE</pv_name>
+      <text>Enable</text>
+      <x>85</x>
+      <width>66</width>
+      <height>26</height>
+      <font>
+        <font family="helvetica" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="widget.getValue() == 1">
+            <value>
+              <color name="cyan-31" red="0" green="224" blue="224">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="true">
+            <value>
+              <color name="cyan-31" red="0" green="224" blue="224">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(P)$(R)SFP:ENABLE</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>2</name>
+    <x>198</x>
+    <y>97</y>
+    <width>196</width>
+    <height>180</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>0</name>
+      <y>165</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:Total</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>Total</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>1</name>
+      <y>145</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:Discarded</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>Discarded</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>2</name>
+      <y>105</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:UDPu</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>UDP unicast</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>3</name>
+      <y>85</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:UDPb</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>UDP broadcast</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>4</name>
+      <y>65</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:ICMP</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>ICMP</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>5</name>
+      <y>45</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:ARP</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>ARP</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>6</name>
+      <x>109</x>
+      <y>25</y>
+      <width>86</width>
+      <height>17</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP2:Status</pv_name>
+        <x>35</x>
+        <y>1</y>
+        <width>50</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <format>4</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>SFP2</text>
+        <width>30</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>7</name>
+      <x>11</x>
+      <y>25</y>
+      <width>86</width>
+      <height>17</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP1:Status</pv_name>
+        <x>35</x>
+        <y>1</y>
+        <width>50</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <format>4</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>SFP1</text>
+        <width>30</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM menu button</name>
+      <pv_name>$(P)$(R)_sfp_link_.SCAN</pv_name>
+      <x>95</x>
+      <width>101</width>
+      <height>21</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>SFP LINK:</text>
+      <x>14</x>
+      <y>3</y>
+      <width>78</width>
+      <height>17</height>
+      <font>
+        <font family="helvetica" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>8</name>
+      <y>125</y>
+      <width>195</width>
+      <height>15</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextInput</name>
+        <pv_name>$(P)$(R)SFP:UDPm</pv_name>
+        <x>94</x>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-2" red="218" green="218" blue="218">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM Label</name>
+        <text>UDP multicast</text>
+        <width>90</width>
+        <height>14</height>
+        <font>
+          <font family="helvetica" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="green-19" red="0" green="128" blue="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

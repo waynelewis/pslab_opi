@@ -1,0 +1,4372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(ps) Diags</name>
+  <x>122</x>
+  <y>180</y>
+  <width>410</width>
+  <height>860</height>
+  <background_color>
+    <color red="236" green="236" blue="236">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>334</x>
+    <y>209</y>
+    <width>62</width>
+    <height>17</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="visibleRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=0.5&amp;&amp; pv0&lt;4.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>$(ps):$(vi)Check.SEVR</pv_name>
+      </rule>
+      <rule name="lineColorAlarmRule" prop_id="line_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):$(vi)Check.SEVR</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>10</x>
+    <y>335</y>
+    <width>391</width>
+    <height>416</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>185</x>
+    <y>660</y>
+    <width>216</width>
+    <height>66</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):CntlTemp</pv_name>
+    <x>305</x>
+    <y>540</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Cntl temperature:</text>
+    <x>205</x>
+    <y>540</y>
+    <width>108</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):CntlTemp.EGU</pv_name>
+    <x>365</x>
+    <y>540</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Local/Remote mode</text>
+    <x>30</x>
+    <y>360</y>
+    <width>121</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>360</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Mode</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>PS READY</text>
+    <x>30</x>
+    <y>380</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>380</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Ready</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>EDM Button</name>
+    <pv_name>$(ps):Reset</pv_name>
+    <x>130</x>
+    <y>35</y>
+    <width>61</width>
+    <height>31</height>
+    <off_label>RESET</off_label>
+    <off_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </off_color>
+    <on_label>RESET</on_label>
+    <on_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color red="255" green="255" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="255" green="255" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Reset</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Message:</text>
+    <x>30</x>
+    <y>725</y>
+    <width>57</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):InfoMsg</pv_name>
+    <x>150</x>
+    <y>730</y>
+    <width>240</width>
+    <height>14</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Main Power Supply $(ps)</text>
+    <x>20</x>
+    <y>15</y>
+    <width>275</width>
+    <height>15</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>ON</value>
+        <description>On</description>
+      </action>
+    </actions>
+    <pv_name>$(ps):StateSetpt</pv_name>
+    <text>On</text>
+    <x>15</x>
+    <y>70</y>
+    <width>51</width>
+    <height>31</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):StateSetpt</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>OFF</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):StateSetpt</pv_name>
+    <text>PanicOFF</text>
+    <x>125</x>
+    <y>70</y>
+    <width>81</width>
+    <height>31</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="128" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="128" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):StateSetpt</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):State</pv_name>
+    <x>65</x>
+    <y>45</y>
+    <width>50</width>
+    <height>16</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Mag. Interlock 1</text>
+    <x>30</x>
+    <y>440</y>
+    <width>97</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Mag. Interlock 2</text>
+    <x>30</x>
+    <y>460</y>
+    <width>97</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Mag. Interlock 3</text>
+    <x>30</x>
+    <y>480</y>
+    <width>97</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 1 Status</text>
+    <x>30</x>
+    <y>500</y>
+    <width>89</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 2 Status</text>
+    <x>30</x>
+    <y>520</y>
+    <width>89</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>GND Curr fault</text>
+    <x>30</x>
+    <y>540</y>
+    <width>89</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Fault latch status</text>
+    <x>30</x>
+    <y>560</y>
+    <width>104</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>560</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>540</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):GndCurrStatus</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>520</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Xduct2Ready</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>500</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Xduct1Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>480</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Magnet3Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>460</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Magnet2Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>440</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Magnet1Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>420</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Magnet0Status</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Mag. Interlock 0</text>
+    <x>30</x>
+    <y>420</y>
+    <width>97</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>400</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):PSState</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>PS On Status</text>
+    <x>30</x>
+    <y>400</y>
+    <width>78</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>660</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):CalibStatus</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Calibration status</text>
+    <x>30</x>
+    <y>660</y>
+    <width>106</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>680</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):HWStatus</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Hardware status</text>
+    <x>30</x>
+    <y>680</y>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 1 $(vi):</text>
+    <x>205</x>
+    <y>360</y>
+    <width>82</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct1$(vi)</pv_name>
+    <x>305</x>
+    <y>360</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct1$(vi).EGU</pv_name>
+    <x>365</x>
+    <y>360</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct2$(vi).EGU</pv_name>
+    <x>365</x>
+    <y>380</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct2$(vi)</pv_name>
+    <x>305</x>
+    <y>380</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 2 $(vi):</text>
+    <x>205</x>
+    <y>380</y>
+    <width>82</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)DAC.EGU</pv_name>
+    <x>365</x>
+    <y>400</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)DAC</pv_name>
+    <x>305</x>
+    <y>400</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>DAC $(vi):</text>
+    <x>205</x>
+    <y>400</y>
+    <width>62</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Ripple$(vi).EGU</pv_name>
+    <x>365</x>
+    <y>420</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Ripple$(vi)</pv_name>
+    <x>305</x>
+    <y>420</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Ripple $(vi):</text>
+    <x>205</x>
+    <y>420</y>
+    <width>73</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GndCurr.EGU</pv_name>
+    <x>365</x>
+    <y>440</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GndCurr</pv_name>
+    <x>300</x>
+    <y>440</y>
+    <width>55</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Ground Curr:</text>
+    <x>205</x>
+    <y>440</y>
+    <width>79</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(iv).EGU</pv_name>
+    <x>365</x>
+    <y>460</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(iv)</pv_name>
+    <x>305</x>
+    <y>460</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Output $(iv):</text>
+    <x>205</x>
+    <y>460</y>
+    <width>77</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):SpareVolt.EGU</pv_name>
+    <x>365</x>
+    <y>560</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):SpareVolt</pv_name>
+    <x>305</x>
+    <y>560</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Spare voltage:</text>
+    <x>205</x>
+    <y>560</y>
+    <width>88</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):OffsetADC.EGU</pv_name>
+    <x>365</x>
+    <y>580</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):OffsetADC</pv_name>
+    <x>305</x>
+    <y>580</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>ADC Offset:</text>
+    <x>205</x>
+    <y>580</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GainADC.EGU</pv_name>
+    <x>365</x>
+    <y>600</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GainADC</pv_name>
+    <x>305</x>
+    <y>600</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>ADC Gain:</text>
+    <x>205</x>
+    <y>600</y>
+    <width>62</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):OffsetDAC.EGU</pv_name>
+    <x>365</x>
+    <y>620</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):OffsetDAC</pv_name>
+    <x>305</x>
+    <y>620</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>DAC Offset:</text>
+    <x>205</x>
+    <y>620</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GainDAC.EGU</pv_name>
+    <x>365</x>
+    <y>640</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GainDAC</pv_name>
+    <x>305</x>
+    <y>640</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>DAC Gain:</text>
+    <x>205</x>
+    <y>640</y>
+    <width>62</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):LastResetCode</pv_name>
+    <x>130</x>
+    <y>580</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>4</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Last reset code:</text>
+    <x>30</x>
+    <y>580</y>
+    <width>97</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Last turn OFF code:</text>
+    <x>30</x>
+    <y>600</y>
+    <width>118</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):LastOffCode</pv_name>
+    <x>130</x>
+    <y>600</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>4</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Self-test error code:</text>
+    <x>30</x>
+    <y>620</y>
+    <width>121</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):SelfTestCode</pv_name>
+    <x>130</x>
+    <y>620</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>4</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Cal. error code:</text>
+    <x>30</x>
+    <y>640</y>
+    <width>94</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):CalibCode</pv_name>
+    <x>130</x>
+    <y>640</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>4</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>d$(vis)/dt:</text>
+    <x>190</x>
+    <y>695</y>
+    <width>35</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>10</x>
+    <y>750</y>
+    <width>391</width>
+    <height>101</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Controller address:</text>
+    <x>30</x>
+    <y>755</y>
+    <width>115</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):CntlAddr</pv_name>
+    <x>145</x>
+    <y>755</y>
+    <width>70</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Chassis</pv_name>
+    <x>145</x>
+    <y>770</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Chassis type:</text>
+    <x>30</x>
+    <y>770</y>
+    <width>81</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):SerialNumber</pv_name>
+    <x>145</x>
+    <y>785</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Serial number:</text>
+    <x>30</x>
+    <y>785</y>
+    <width>89</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):MagnetID</pv_name>
+    <x>145</x>
+    <y>800</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Magnet ID:</text>
+    <x>30</x>
+    <y>800</y>
+    <width>66</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Firmware version:</text>
+    <x>30</x>
+    <y>815</y>
+    <width>109</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):FWVersion</pv_name>
+    <x>145</x>
+    <y>815</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Calibration date:</text>
+    <x>30</x>
+    <y>830</y>
+    <width>101</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):CalibDate</pv_name>
+    <x>145</x>
+    <y>830</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):BitbusCountRsp</pv_name>
+    <x>350</x>
+    <y>755</y>
+    <width>35</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>/</text>
+    <x>340</x>
+    <y>755</y>
+    <width>5</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):BitbusCountCmd</pv_name>
+    <x>300</x>
+    <y>755</y>
+    <width>35</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Cmd/Rsp:</text>
+    <x>220</x>
+    <y>755</y>
+    <width>58</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct1V2$(vis)</pv_name>
+    <x>320</x>
+    <y>770</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 1 $(vis)/V:</text>
+    <x>220</x>
+    <y>770</y>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Xduct2V2$(vis)</pv_name>
+    <x>320</x>
+    <y>785</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Xduct 2 $(vis)/V:</text>
+    <x>220</x>
+    <y>785</y>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):GndCurrV2I</pv_name>
+    <x>320</x>
+    <y>800</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>GND Curr I/V:</text>
+    <x>220</x>
+    <y>800</y>
+    <width>81</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(iv)V2$(ivs)</pv_name>
+    <x>320</x>
+    <y>815</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Output $(iv) $(ivs)/V:</text>
+    <x>220</x>
+    <y>815</y>
+    <width>127</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):VoltRef</pv_name>
+    <x>320</x>
+    <y>830</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Reference Voltage:</text>
+    <x>220</x>
+    <y>830</y>
+    <width>116</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):VoltRef.EGU</pv_name>
+    <x>380</x>
+    <y>830</y>
+    <width>23</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)D$(vis)DtMax.EGU</pv_name>
+    <x>365</x>
+    <y>705</y>
+    <width>25</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)</pv_name>
+    <x>265</x>
+    <y>140</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi).EGU</pv_name>
+    <x>320</x>
+    <y>140</y>
+    <width>20</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="scaledslider" version="2.0.0">
+    <name>EDM Motif Slider</name>
+    <pv_name>$(ps):$(vi)Setpt</pv_name>
+    <x>215</x>
+    <y>160</y>
+    <width>165</width>
+    <height>35</height>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <scale_format></scale_format>
+    <show_hihi>false</show_hihi>
+    <show_high>false</show_high>
+    <show_low>false</show_low>
+    <show_lolo>false</show_lolo>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <maximum>0.0</maximum>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>RAMPING*</text>
+    <x>235</x>
+    <y>115</y>
+    <width>125</width>
+    <height>15</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="224" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="visibleRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0&amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>$(ps):RampStatus</pv_name>
+      </rule>
+    </rules>
+    <border_color>
+      <color red="224" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Desired $(vi)</text>
+    <x>220</x>
+    <y>210</y>
+    <width>78</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)SetptDes</pv_name>
+    <x>340</x>
+    <y>210</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="0" green="0" blue="0" alpha="0">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)Setpt.DRVH</pv_name>
+    <x>340</x>
+    <y>230</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Maximum $(vi)</text>
+    <x>220</x>
+    <y>230</y>
+    <width>91</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>State:</text>
+    <x>25</x>
+    <y>45</y>
+    <width>36</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>10</x>
+    <y>110</y>
+    <width>196</width>
+    <height>176</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):ControlStatus</pv_name>
+    <x>75</x>
+    <y>165</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Status:</text>
+    <x>20</x>
+    <y>165</y>
+    <width>43</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM Text Entry</name>
+    <pv_name>$(ps):StandardizeNumCycleMax</pv_name>
+    <x>135</x>
+    <y>180</y>
+    <width>41</width>
+    <height>33</height>
+    <font>
+      <font family="times" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="0" green="0" blue="0" alpha="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Max Cycles:</text>
+    <x>20</x>
+    <y>190</y>
+    <width>72</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Cycles So Far:</text>
+    <x>20</x>
+    <y>215</y>
+    <width>85</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):StandardizeNumCycle</pv_name>
+    <x>150</x>
+    <y>215</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM Text Entry</name>
+    <pv_name>$(ps):ControlDelayMax</pv_name>
+    <x>135</x>
+    <y>230</y>
+    <width>41</width>
+    <height>33</height>
+    <font>
+      <font family="times" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="0" green="0" blue="0" alpha="0">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Settle Time (sec):</text>
+    <x>20</x>
+    <y>240</y>
+    <width>107</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):ControlDelay</pv_name>
+    <x>150</x>
+    <y>265</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Time So Far:</text>
+    <x>20</x>
+    <y>265</y>
+    <width>76</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Off</description>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Off</text>
+    <x>70</x>
+    <y>70</y>
+    <width>51</width>
+    <height>31</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>MPS Permit</text>
+    <x>30</x>
+    <y>340</y>
+    <width>69</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM Rectangle</name>
+    <x>150</x>
+    <y>340</y>
+    <width>26</width>
+    <height>16</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="224" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="backColorAlarmRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvLegacySev0==-1">
+          <value>
+            <color name="Invalid" red="255" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pvLegacySev0==2">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):MPSPermit</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Driver status:</text>
+    <x>205</x>
+    <y>340</y>
+    <width>82</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):HWStatus.STAT</pv_name>
+    <x>285</x>
+    <y>340</y>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="158" green="158" blue="158">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)D$(vis)DtMax</pv_name>
+    <x>275</x>
+    <y>685</y>
+    <width>45</width>
+    <height>18</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Max:</text>
+    <x>230</x>
+    <y>685</y>
+    <width>29</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)D$(vis)DtMin</pv_name>
+    <x>275</x>
+    <y>705</y>
+    <width>45</width>
+    <height>18</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Min:</text>
+    <x>230</x>
+    <y>705</y>
+    <width>26</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Select:</text>
+    <x>230</x>
+    <y>665</y>
+    <width>42</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>EDM choice  Button</name>
+    <pv_name>$(ps):$(vi)D$(vis)DtSelect</pv_name>
+    <x>275</x>
+    <y>665</y>
+    <width>75</width>
+    <height>15</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)D$(vis)DtOut</pv_name>
+    <x>330</x>
+    <y>705</y>
+    <width>30</width>
+    <height>14</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Selected:</text>
+    <x>335</x>
+    <y>690</y>
+    <width>57</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Resistance.EGU</pv_name>
+    <x>365</x>
+    <y>480</y>
+    <width>35</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Resistance</pv_name>
+    <x>305</x>
+    <y>480</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>4</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Resistance:</text>
+    <x>205</x>
+    <y>480</y>
+    <width>70</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Control</text>
+    <x>80</x>
+    <y>115</y>
+    <width>44</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>EDM menu button</name>
+    <pv_name>$(ps):Control</pv_name>
+    <x>40</x>
+    <y>135</y>
+    <width>131</width>
+    <height>26</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>6</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Set $(vi) to Min</text>
+    <x>220</x>
+    <y>310</y>
+    <width>156</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>5</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Set $(vi) to Zero</text>
+    <x>220</x>
+    <y>285</y>
+    <width>156</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>3</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Set $(vi) to Des</text>
+    <x>220</x>
+    <y>260</y>
+    <width>156</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)SetptMin</pv_name>
+    <x>340</x>
+    <y>245</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="0" green="0" blue="0" alpha="0">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Minimum $(vi)</text>
+    <x>220</x>
+    <y>245</y>
+    <width>87</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>4</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Standardize</text>
+    <x>15</x>
+    <y>290</y>
+    <width>96</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(ps):Control</pv_name>
+    <text>Abort</text>
+    <x>120</x>
+    <y>290</y>
+    <width>81</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(ps):Control</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):$(vi)SetptRdbk</pv_name>
+    <x>340</x>
+    <y>195</y>
+    <width>50</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Setpoint Readback</text>
+    <x>220</x>
+    <y>195</y>
+    <width>114</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM related display</name>
+    <actions>
+      <action type="open_display">
+        <file>etherpsc_alarm_diagnostics.opi</file>
+        <target>window</target>
+        <description>Alarm Limits</description>
+      </action>
+    </actions>
+    <text>Alarm Limits</text>
+    <x>300</x>
+    <y>15</y>
+    <width>96</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="16" green="78" blue="139">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Resistance.E</pv_name>
+    <x>310</x>
+    <y>500</y>
+    <width>45</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Resistance Offset:</text>
+    <x>205</x>
+    <y>500</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Resistance.EGU</pv_name>
+    <x>365</x>
+    <y>500</y>
+    <width>35</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextInput</name>
+    <pv_name>$(ps):Resistance.D</pv_name>
+    <x>330</x>
+    <y>520</y>
+    <width>35</width>
+    <height>14</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>R Smoothing Factor:</text>
+    <x>205</x>
+    <y>520</y>
+    <width>123</width>
+    <height>15</height>
+    <font>
+      <font family="schoolbook" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+</display>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PS $(P)$(R)</name>
+  <width>1000</width>
+  <height>700</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)OutputVoltage</pv_name>
+    <x>150</x>
+    <y>120</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar</name>
+    <pv_name>$(P)$(R)OutputVoltage</pv_name>
+    <x>390</x>
+    <y>120</y>
+    <width>160</width>
+    <height>30</height>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_1</name>
+    <pv_name>$(P)$(R)OutputCurrent</pv_name>
+    <x>390</x>
+    <y>200</y>
+    <width>160</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(R)OutputCurrent</pv_name>
+    <x>150</x>
+    <y>200</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(R)GroundCurrent</pv_name>
+    <x>186</x>
+    <y>270</y>
+    <width>110</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(R)DCLinkVoltage</pv_name>
+    <x>186</x>
+    <y>300</y>
+    <width>110</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)$(R)HeatsinkTemp</pv_name>
+    <x>186</x>
+    <y>330</y>
+    <width>110</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P)$(R)LimitMinV</pv_name>
+    <x>270</x>
+    <y>120</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)$(R)LimitMaxV</pv_name>
+    <x>560</x>
+    <y>120</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>Byte Monitor</name>
+    <pv_name>$(P)$(R)StatusMSB</pv_name>
+    <x>730</x>
+    <y>70</y>
+    <width>13</width>
+    <height>220</height>
+    <numBits>16</numBits>
+    <horizontal>false</horizontal>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>Byte Monitor_1</name>
+    <pv_name>$(P)$(R)StatusLSB</pv_name>
+    <x>730</x>
+    <y>290</y>
+    <width>13</width>
+    <height>220</height>
+    <numBits>16</numBits>
+    <horizontal>false</horizontal>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(P)$(R)LimitMaxI</pv_name>
+    <x>560</x>
+    <y>200</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(P)$(R)LimitMinI</pv_name>
+    <x>270</x>
+    <y>200</y>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(P)$(R)Model</pv_name>
+    <x>186</x>
+    <y>377</y>
+    <width>110</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>$(P)$(R)Version</pv_name>
+    <x>185</x>
+    <y>413</y>
+    <width>110</width>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button</name>
+    <pv_name>$(P)$(R)Enable</pv_name>
+    <x>30</x>
+    <y>50</y>
+    <width>180</width>
+    <height>30</height>
+    <horizontal>false</horizontal>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button_1</name>
+    <pv_name>$(P)$(R)RegulationMode</pv_name>
+    <x>230</x>
+    <y>50</y>
+    <width>180</width>
+    <height>30</height>
+    <horizontal>false</horizontal>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner</name>
+    <pv_name>$(P)$(R)Voltage</pv_name>
+    <x>20</x>
+    <y>120</y>
+    <width>110</width>
+    <height>30</height>
+    <increment>0.1</increment>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner_1</name>
+    <pv_name>$(P)$(R)Current</pv_name>
+    <x>20</x>
+    <y>200</y>
+    <width>110</width>
+    <height>30</height>
+    <increment>0.1</increment>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button_2</name>
+    <pv_name>$(P)$(R)RampEnable</pv_name>
+    <x>410</x>
+    <y>50</y>
+    <width>180</width>
+    <height>30</height>
+    <horizontal>false</horizontal>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button_3</name>
+    <pv_name>$(P)$(R)StatusReset</pv_name>
+    <x>370</x>
+    <y>397</y>
+    <width>180</width>
+    <height>30</height>
+    <horizontal>false</horizontal>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>0</text>
+    <x>720</x>
+    <y>490</y>
+    <width>10</width>
+    <height>10</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Voltage</text>
+    <x>20</x>
+    <y>90</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Current</text>
+    <x>20</x>
+    <y>170</y>
+    <width>150</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)StatusReset</pv_name>
+    <text>ILck Reset</text>
+    <x>360</x>
+    <y>350</y>
+    <width>80</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>15</text>
+    <x>700</x>
+    <y>290</y>
+    <width>20</width>
+    <height>10</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>31</text>
+    <x>700</x>
+    <y>70</y>
+    <width>20</width>
+    <height>10</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Output Enable</text>
+    <x>30</x>
+    <y>20</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Mode</text>
+    <x>230</x>
+    <y>20</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Ramp</text>
+    <x>410</x>
+    <y>20</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Ground Current</text>
+    <x>20</x>
+    <y>270</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>Logic Voltage</text>
+    <x>20</x>
+    <y>300</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Temp</text>
+    <x>20</x>
+    <y>330</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>Model</text>
+    <x>20</x>
+    <y>377</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Version</text>
+    <x>20</x>
+    <y>413</y>
+    <width>150</width>
+  </widget>
+</display>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>FastPS WF $(P)$(R)</name>
+  <x>206</x>
+  <y>129</y>
+  <width>400</width>
+  <height>150</height>
+  <background_color>
+    <color name="GLOBAL canvas" red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>CAENels Fast-PS "$(P)$(R)"</text>
+    <y>1</y>
+    <width>400</width>
+    <height>28</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="green-19" red="0" green="128" blue="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM Label</name>
+    <text>Waveform Output</text>
+    <y>28</y>
+    <width>400</width>
+    <height>21</height>
+    <font>
+      <font family="helvetica" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="green-19" red="0" green="128" blue="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>0</name>
+    <x>2</x>
+    <y>103</y>
+    <width>183</width>
+    <height>17</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Time Step (s):</text>
+      <width>99</width>
+      <height>17</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextInput</name>
+      <pv_name>$(P)$(R)MWAVET</pv_name>
+      <x>92</x>
+      <width>90</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>1</name>
+    <x>210</x>
+    <y>99</y>
+    <width>165</width>
+    <height>17</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextInput</name>
+      <pv_name>$(P)$(R)MWAVE:index</pv_name>
+      <x>84</x>
+      <width>80</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Index:</text>
+      <width>80</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>2</name>
+    <x>210</x>
+    <y>119</y>
+    <width>165</width>
+    <height>17</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextInput</name>
+      <pv_name>$(P)$(R)MWAVE</pv_name>
+      <x>84</x>
+      <width>80</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Value:</text>
+      <width>80</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>3</name>
+    <x>16</x>
+    <y>127</y>
+    <width>95</width>
+    <height>19</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>0</name>
+      <x>76</x>
+      <width>19</width>
+      <height>19</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="ellipse" version="2.0.0">
+        <name>EDM Ellipse</name>
+        <width>19</width>
+        <height>19</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Monitor: NORMAL" red="0" green="255" blue="0">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="visibleRule" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0&amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)MST_Waveform</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>EDM Ellipse</name>
+        <width>19</width>
+        <height>19</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Monitor: NORMAL" red="0" green="255" blue="0">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Active</text>
+      <y>1</y>
+      <width>70</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)MWAVESTOP</pv_name>
+    <text>STOP</text>
+    <x>294</x>
+    <y>59</y>
+    <width>81</width>
+    <height>25</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P)$(R)MWAVESTOP</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM Message Button</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)MWAVESTART</pv_name>
+    <text>START</text>
+    <x>197</x>
+    <y>59</y>
+    <width>81</width>
+    <height>25</height>
+    <font>
+      <font family="helvetica" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="black-14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <rules>
+      <rule name="OnOffBackgroundRule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="widget.getValue() == 1">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color name="cyan-31" red="0" green="224" blue="224">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P)$(R)MWAVESTART</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>4</name>
+    <x>6</x>
+    <y>63</y>
+    <width>179</width>
+    <height>18</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextInput</name>
+      <pv_name>$(P)$(R)MWAVE:reps</pv_name>
+      <x>78</x>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Repetitions:</text>
+      <y>1</y>
+      <width>75</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>5</name>
+    <x>6</x>
+    <y>83</y>
+    <width>179</width>
+    <height>18</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextInput</name>
+      <pv_name>$(P)$(R)MWAVEP</pv_name>
+      <x>78</x>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="cyan-31" red="0" green="224" blue="224">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM Label</name>
+      <text>Points:</text>
+      <y>1</y>
+      <width>75</width>
+      <height>16</height>
+      <font>
+        <font family="helvetica" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="green-19" red="0" green="128" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+</display>
