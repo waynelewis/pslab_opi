@@ -193,4 +193,23 @@
     <width>90</width>
     <tooltip>$(actions)</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_10</name>
+    <actions>
+      <action type="open_display">
+        <file>/usr/local/epics/R3.15.4/modules/instrument/keysight3497xa/KS3497xAApp/op/opi/KS3497xA.bob</file>
+        <macros>
+          <P>MMT:</P>
+          <R>MUX1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>MUX1 - 34972A</text>
+    <x>390</x>
+    <y>50</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
