@@ -212,4 +212,41 @@
     <width>130</width>
     <tooltip>$(actions)</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_11</name>
+    <actions>
+      <action type="open_display">
+        <file>plc.bob</file>
+        <macros>
+          <P>MMT:</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>PLC1</text>
+    <x>530</x>
+    <y>50</y>
+    <width>90</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_12</name>
+    <actions>
+      <action type="open_display">
+        <file>CaenFastPS.bob</file>
+        <macros>
+          <P>fastps:</P>
+          <R>5:</R>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Fast-PS 5</text>
+    <x>130</x>
+    <y>210</y>
+    <width>90</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
