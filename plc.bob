@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <width>850</width>
-  <height>1000</height>
+  <height>1100</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -32,7 +32,7 @@
     <x>10</x>
     <y>40</y>
     <width>400</width>
-    <height>340</height>
+    <height>290</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi.bob</file>
@@ -201,12 +201,14 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>QFC1:</R>
+      <DEV>QFC1</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>390</y>
+    <y>330</y>
     <width>400</width>
-    <height>350</height>
+    <height>380</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
       <file>_plc_bi.bob</file>
@@ -327,16 +329,31 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_37</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow_Sts</S>
+      </macros>
+      <x>12</x>
+      <y>312</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>QFC2:</R>
+      <DEV>QFC2</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>720</y>
+    <y>710</y>
     <width>400</width>
-    <height>350</height>
+    <height>380</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
       <file>_plc_bi.bob</file>
@@ -453,6 +470,19 @@
       </macros>
       <x>12</x>
       <y>192</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_38</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow_Sts</S>
+      </macros>
+      <x>12</x>
+      <y>312</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
