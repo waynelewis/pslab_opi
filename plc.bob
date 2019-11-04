@@ -543,7 +543,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>FASTPS1:</R>
+      <R>FASTPS3:</R>
     </macros>
     <x>410</x>
     <y>470</y>
@@ -593,6 +593,18 @@
     <y>880</y>
     <width>400</width>
     <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_31</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -652,17 +664,5 @@
     <x>820</x>
     <y>710</y>
     <tooltip>$(actions)</tooltip>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_31</name>
-    <file>_plc_bo.bob</file>
-    <macros>
-      <S>Pwr_Permit_BC</S>
-    </macros>
-    <x>450</x>
-    <y>900</y>
-    <width>350</width>
-    <height>20</height>
-    <resize>2</resize>
   </widget>
 </display>
