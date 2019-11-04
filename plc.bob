@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <width>850</width>
-  <height>1100</height>
+  <height>1200</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -32,7 +32,7 @@
     <x>10</x>
     <y>40</y>
     <width>400</width>
-    <height>290</height>
+    <height>350</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi.bob</file>
@@ -131,6 +131,32 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_41</name>
+      <file>_plc_ai.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>252</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_42</name>
+      <file>_plc_ai.bob</file>
+      <macros>
+        <R>$(FM2)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>282</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -160,7 +186,7 @@
       <R>PSC2:</R>
     </macros>
     <x>410</x>
-    <y>120</y>
+    <y>400</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -181,8 +207,8 @@
     <macros>
       <R>PSC3:</R>
     </macros>
-    <x>410</x>
-    <y>200</y>
+    <x>420</x>
+    <y>800</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -206,9 +232,9 @@
       <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>330</y>
+    <y>390</y>
     <width>400</width>
-    <height>380</height>
+    <height>410</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
       <file>_plc_bi.bob</file>
@@ -342,6 +368,19 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_39</name>
+      <file>_plc_ai.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>342</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -351,9 +390,9 @@
       <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>710</y>
+    <y>800</y>
     <width>400</width>
-    <height>380</height>
+    <height>410</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
       <file>_plc_bi.bob</file>
@@ -487,6 +526,19 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_40</name>
+      <file>_plc_ai.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>342</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -494,7 +546,7 @@
       <R>FASTPS1:</R>
     </macros>
     <x>410</x>
-    <y>290</y>
+    <y>480</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -516,7 +568,7 @@
       <R>FASTPS2:</R>
     </macros>
     <x>410</x>
-    <y>370</y>
+    <y>560</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -537,30 +589,18 @@
     <macros>
       <R>FASTPS3:</R>
     </macros>
-    <x>410</x>
-    <y>450</y>
+    <x>420</x>
+    <y>880</y>
     <width>400</width>
     <height>80</height>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_31</name>
-      <file>_plc_bo.bob</file>
-      <macros>
-        <S>Pwr_Permit_BC</S>
-      </macros>
-      <x>12</x>
-      <y>12</y>
-      <width>350</width>
-      <height>20</height>
-      <resize>2</resize>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
       <R>FASTPS4:</R>
     </macros>
-    <x>410</x>
-    <y>530</y>
+    <x>420</x>
+    <y>960</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -582,7 +622,7 @@
       <R>FASTPS5:</R>
     </macros>
     <x>410</x>
-    <y>610</y>
+    <y>120</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -609,8 +649,20 @@
     </actions>
     <pv_name>$(P)LATCH:Reset</pv_name>
     <text>Latch reset</text>
-    <x>420</x>
+    <x>820</x>
     <y>710</y>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_31</name>
+    <file>_plc_bo.bob</file>
+    <macros>
+      <S>Pwr_Permit_BC</S>
+    </macros>
+    <x>450</x>
+    <y>900</y>
+    <width>350</width>
+    <height>20</height>
+    <resize>2</resize>
   </widget>
 </display>
