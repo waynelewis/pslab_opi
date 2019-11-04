@@ -2,6 +2,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <width>850</width>
+  <height>1000</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -28,6 +29,7 @@
     <x>10</x>
     <y>40</y>
     <width>400</width>
+    <height>230</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi.bob</file>
@@ -64,6 +66,42 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T04_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>102</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T05_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>132</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T06_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>162</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -73,6 +111,7 @@
     <x>410</x>
     <y>40</y>
     <width>400</width>
+    <height>80</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_3</name>
       <file>_plc_bo.bob</file>
@@ -85,5 +124,434 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>PSC2:</R>
+    </macros>
+    <x>410</x>
+    <y>120</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>PSC3:</R>
+    </macros>
+    <x>410</x>
+    <y>200</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>QFC1:</R>
+    </macros>
+    <x>10</x>
+    <y>280</y>
+    <width>400</width>
+    <height>350</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T02_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_11</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T03_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>72</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T04_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>102</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T05_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>132</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_14</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T06_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>162</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_15</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T10_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>282</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_16</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T09_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>252</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_17</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T08_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>222</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_18</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T07_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>192</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>QFC2:</R>
+    </macros>
+    <x>10</x>
+    <y>640</y>
+    <width>400</width>
+    <height>350</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_19</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_20</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T02_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_21</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T03_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>72</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_22</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T04_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>102</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_23</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T05_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>132</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_24</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T06_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>162</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_25</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T10_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>282</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_26</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T09_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>252</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_27</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T08_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>222</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_28</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>T07_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>192</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>P4</R>
+    </macros>
+    <x>410</x>
+    <y>290</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_29</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>P5</R>
+    </macros>
+    <x>410</x>
+    <y>370</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_30</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>P6</R>
+    </macros>
+    <x>410</x>
+    <y>450</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_31</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>P7</R>
+    </macros>
+    <x>410</x>
+    <y>530</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_32</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <R>P8</R>
+    </macros>
+    <x>410</x>
+    <y>610</y>
+    <width>400</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_33</name>
+      <file>_plc_bo.bob</file>
+      <macros>
+        <S>Pwr_Permit_BC</S>
+      </macros>
+      <x>12</x>
+      <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)LATCH:Reset</pv_name>
+    <text>Latch reset</text>
+    <x>420</x>
+    <y>710</y>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
