@@ -186,7 +186,7 @@
       <R>PSC2:</R>
     </macros>
     <x>410</x>
-    <y>400</y>
+    <y>390</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -207,7 +207,7 @@
     <macros>
       <R>PSC3:</R>
     </macros>
-    <x>420</x>
+    <x>410</x>
     <y>800</y>
     <width>400</width>
     <height>80</height>
@@ -546,7 +546,7 @@
       <R>FASTPS1:</R>
     </macros>
     <x>410</x>
-    <y>480</y>
+    <y>470</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -568,7 +568,7 @@
       <R>FASTPS2:</R>
     </macros>
     <x>410</x>
-    <y>560</y>
+    <y>550</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -589,7 +589,7 @@
     <macros>
       <R>FASTPS3:</R>
     </macros>
-    <x>420</x>
+    <x>410</x>
     <y>880</y>
     <width>400</width>
     <height>80</height>
@@ -599,7 +599,7 @@
     <macros>
       <R>FASTPS4:</R>
     </macros>
-    <x>420</x>
+    <x>410</x>
     <y>960</y>
     <width>400</width>
     <height>80</height>
