@@ -110,7 +110,7 @@
       <file>_plc_bi.bob</file>
       <macros>
         <R>$(FM1)</R>
-        <S>Flow_Sts</S>
+        <S>FlowOK</S>
       </macros>
       <x>12</x>
       <y>192</y>
@@ -123,7 +123,7 @@
       <file>_plc_bi.bob</file>
       <macros>
         <R>$(FM2)</R>
-        <S>Flow_Sts</S>
+        <S>FlowOK</S>
       </macros>
       <x>12</x>
       <y>222</y>
@@ -334,7 +334,7 @@
       <file>_plc_bi.bob</file>
       <macros>
         <R>$(FM1)</R>
-        <S>Flow_Sts</S>
+        <S>FlowOK</S>
       </macros>
       <x>12</x>
       <y>312</y>
@@ -479,7 +479,7 @@
       <file>_plc_bi.bob</file>
       <macros>
         <R>$(FM1)</R>
-        <S>Flow_Sts</S>
+        <S>FlowOK</S>
       </macros>
       <x>12</x>
       <y>312</y>
