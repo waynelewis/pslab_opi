@@ -432,7 +432,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P4</R>
+      <R>P4:</R>
     </macros>
     <x>410</x>
     <y>290</y>
@@ -454,7 +454,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P5</R>
+      <R>P5:</R>
     </macros>
     <x>410</x>
     <y>370</y>
@@ -476,7 +476,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P6</R>
+      <R>P6:</R>
     </macros>
     <x>410</x>
     <y>450</y>
@@ -498,7 +498,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P7</R>
+      <R>P7:</R>
     </macros>
     <x>410</x>
     <y>530</y>
@@ -520,7 +520,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P8</R>
+      <R>P8:</R>
     </macros>
     <x>410</x>
     <y>610</y>
