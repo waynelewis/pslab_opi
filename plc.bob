@@ -24,12 +24,15 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>DIPB1:</R>
+      <DEV>DIPB1</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <FM2>$(DEV)_FM2:</FM2>
+      <R>$(DEV):</R>
     </macros>
     <x>10</x>
     <y>40</y>
     <width>400</width>
-    <height>230</height>
+    <height>340</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi.bob</file>
@@ -98,6 +101,32 @@
       </macros>
       <x>12</x>
       <y>162</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_34</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow_Sts</S>
+      </macros>
+      <x>12</x>
+      <y>192</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_36</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <R>$(FM2)</R>
+        <S>Flow_Sts</S>
+      </macros>
+      <x>12</x>
+      <y>222</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -175,7 +204,7 @@
       <R>QFC1:</R>
     </macros>
     <x>10</x>
-    <y>280</y>
+    <y>390</y>
     <width>400</width>
     <height>350</height>
     <widget type="embedded" version="2.0.0">
@@ -305,7 +334,7 @@
       <R>QFC2:</R>
     </macros>
     <x>10</x>
-    <y>640</y>
+    <y>720</y>
     <width>400</width>
     <height>350</height>
     <widget type="embedded" version="2.0.0">
@@ -432,7 +461,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P4:</R>
+      <R>FASTPS1:</R>
     </macros>
     <x>410</x>
     <y>290</y>
@@ -454,7 +483,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P5:</R>
+      <R>FASTPS2:</R>
     </macros>
     <x>410</x>
     <y>370</y>
@@ -476,7 +505,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P6:</R>
+      <R>FASTPS3:</R>
     </macros>
     <x>410</x>
     <y>450</y>
@@ -498,7 +527,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P7:</R>
+      <R>FASTPS4:</R>
     </macros>
     <x>410</x>
     <y>530</y>
@@ -520,7 +549,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>P8:</R>
+      <R>FASTPS5:</R>
     </macros>
     <x>410</x>
     <y>610</y>
