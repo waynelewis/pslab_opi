@@ -13,10 +13,6 @@
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(P)$(R)$(S)</pv_name>
-    <off_color>
-      <color name="STOP" red="255" green="0" blue="0">
-      </color>
-    </off_color>
     <square>true</square>
   </widget>
 </display>
