@@ -36,6 +36,18 @@
     <width>400</width>
     <height>360</height>
     <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_45</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi_latch_bypass.bob</file>
       <macros>
@@ -159,18 +171,6 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_45</name>
-      <file>_plc_title.bob</file>
-      <macros>
-        <S>T01_Interlock_BM</S>
-      </macros>
-      <x>12</x>
-      <y>2</y>
-      <width>350</width>
-      <height>20</height>
-      <resize>2</resize>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -285,6 +285,18 @@
     <y>400</y>
     <width>400</width>
     <height>420</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_44</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
       <file>_plc_bi_latch_bypass.bob</file>
@@ -431,18 +443,6 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_44</name>
-      <file>_plc_title.bob</file>
-      <macros>
-        <S>T01_Interlock_BM</S>
-      </macros>
-      <x>12</x>
-      <y>2</y>
-      <width>350</width>
-      <height>20</height>
-      <resize>2</resize>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -455,6 +455,18 @@
     <y>820</y>
     <width>400</width>
     <height>420</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_43</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
       <file>_plc_bi_latch_bypass.bob</file>
@@ -597,18 +609,6 @@
       </macros>
       <x>12</x>
       <y>352</y>
-      <width>350</width>
-      <height>20</height>
-      <resize>2</resize>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_43</name>
-      <file>_plc_title.bob</file>
-      <macros>
-        <S>T01_Interlock_BM</S>
-      </macros>
-      <x>12</x>
-      <y>2</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
