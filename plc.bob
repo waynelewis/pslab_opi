@@ -178,7 +178,7 @@
     <x>410</x>
     <y>40</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_3</name>
       <file>_plc_bo.bob</file>
@@ -187,6 +187,18 @@
       </macros>
       <x>12</x>
       <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_35</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -200,7 +212,7 @@
     <x>410</x>
     <y>400</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_7</name>
       <file>_plc_bo.bob</file>
@@ -209,6 +221,18 @@
       </macros>
       <x>12</x>
       <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_47</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -222,7 +246,7 @@
     <x>410</x>
     <y>820</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_8</name>
       <file>_plc_bo.bob</file>
@@ -231,6 +255,18 @@
       </macros>
       <x>12</x>
       <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_50</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -582,9 +618,9 @@
       <R>FASTPS1:</R>
     </macros>
     <x>410</x>
-    <y>480</y>
+    <y>510</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
       <file>_plc_bo.bob</file>
@@ -597,6 +633,18 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_48</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -604,9 +652,9 @@
       <R>FASTPS2:</R>
     </macros>
     <x>410</x>
-    <y>560</y>
+    <y>620</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_30</name>
       <file>_plc_bo.bob</file>
@@ -619,6 +667,18 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_49</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -626,9 +686,9 @@
       <R>FASTPS3:</R>
     </macros>
     <x>410</x>
-    <y>900</y>
+    <y>930</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_31</name>
       <file>_plc_bo.bob</file>
@@ -641,6 +701,18 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_51</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -648,9 +720,9 @@
       <R>FASTPS4:</R>
     </macros>
     <x>410</x>
-    <y>980</y>
+    <y>1040</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_32</name>
       <file>_plc_bo.bob</file>
@@ -663,6 +735,18 @@
       <height>20</height>
       <resize>2</resize>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_52</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
@@ -670,9 +754,9 @@
       <R>FASTPS5:</R>
     </macros>
     <x>410</x>
-    <y>120</y>
+    <y>150</y>
     <width>400</width>
-    <height>80</height>
+    <height>110</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_33</name>
       <file>_plc_bo.bob</file>
@@ -681,6 +765,18 @@
       </macros>
       <x>12</x>
       <y>12</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_46</name>
+      <file>_plc_bi.bob</file>
+      <macros>
+        <S>Pwr_Status_BM</S>
+      </macros>
+      <x>12</x>
+      <y>42</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
