@@ -37,7 +37,7 @@
     <height>360</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T01_Interlock_BM</S>
       </macros>
@@ -49,7 +49,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_1</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T02_Interlock_BM</S>
       </macros>
@@ -61,7 +61,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_2</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T03_Interlock_BM</S>
       </macros>
@@ -73,7 +73,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_4</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T04_Interlock_BM</S>
       </macros>
@@ -85,7 +85,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_5</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T05_Interlock_BM</S>
       </macros>
@@ -97,7 +97,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_6</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T06_Interlock_BM</S>
       </macros>
@@ -109,7 +109,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_34</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <R>$(FM1)</R>
         <S>FlowOK</S>
@@ -122,7 +122,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_36</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <R>$(FM2)</R>
         <S>FlowOK</S>
@@ -287,7 +287,7 @@
     <height>420</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T01_Interlock_BM</S>
       </macros>
@@ -299,7 +299,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_10</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T02_Interlock_BM</S>
       </macros>
@@ -311,7 +311,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_11</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T03_Interlock_BM</S>
       </macros>
@@ -323,7 +323,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_12</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T04_Interlock_BM</S>
       </macros>
@@ -335,7 +335,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_13</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T05_Interlock_BM</S>
       </macros>
@@ -347,7 +347,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_14</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T06_Interlock_BM</S>
       </macros>
@@ -359,7 +359,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_15</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T10_Interlock_BM</S>
       </macros>
@@ -371,7 +371,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_16</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T09_Interlock_BM</S>
       </macros>
@@ -383,7 +383,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_17</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T08_Interlock_BM</S>
       </macros>
@@ -395,7 +395,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_18</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T07_Interlock_BM</S>
       </macros>
@@ -407,7 +407,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_37</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <R>$(FM1)</R>
         <S>FlowOK</S>
@@ -457,7 +457,7 @@
     <height>420</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T01_Interlock_BM</S>
       </macros>
@@ -469,7 +469,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_20</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T02_Interlock_BM</S>
       </macros>
@@ -481,7 +481,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_21</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T03_Interlock_BM</S>
       </macros>
@@ -493,7 +493,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_22</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T04_Interlock_BM</S>
       </macros>
@@ -505,7 +505,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_23</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T05_Interlock_BM</S>
       </macros>
@@ -517,7 +517,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_24</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T06_Interlock_BM</S>
       </macros>
@@ -529,7 +529,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_25</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T10_Interlock_BM</S>
       </macros>
@@ -541,7 +541,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_26</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T09_Interlock_BM</S>
       </macros>
@@ -553,7 +553,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T08_Interlock_BM</S>
       </macros>
@@ -565,7 +565,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_28</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <S>T07_Interlock_BM</S>
       </macros>
@@ -577,7 +577,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_38</name>
-      <file>_plc_bi_latch.bob</file>
+      <file>_plc_bi_latch_bypass.bob</file>
       <macros>
         <R>$(FM1)</R>
         <S>FlowOK</S>

@@ -25,12 +25,22 @@
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
     <text>Description</text>
-    <x>70</x>
-    <width>280</width>
+    <x>110</x>
+    <width>240</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
       </font>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Bypass</text>
+    <x>70</x>
+    <width>40</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
   </widget>
 </display>
