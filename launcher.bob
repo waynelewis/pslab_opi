@@ -225,7 +225,7 @@
       </action>
     </actions>
     <text>PLC1</text>
-    <x>530</x>
+    <x>540</x>
     <y>50</y>
     <width>90</width>
     <tooltip>$(actions)</tooltip>
