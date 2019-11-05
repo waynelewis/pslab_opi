@@ -9,7 +9,7 @@
     <text>PLC - $(P)</text>
     <x use_class="true">0</x>
     <y use_class="true">0</y>
-    <width>340</width>
+    <width>810</width>
     <height>30</height>
     <font use_class="true">
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -20,6 +20,8 @@
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
