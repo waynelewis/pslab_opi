@@ -14,5 +14,6 @@
     <name>LED</name>
     <pv_name>$(P)$(R)$(S)</pv_name>
     <square>true</square>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>
