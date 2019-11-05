@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <width>850</width>
-  <height>1200</height>
+  <height>1300</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -32,7 +32,7 @@
     <x>10</x>
     <y>40</y>
     <width>400</width>
-    <height>350</height>
+    <height>360</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>_plc_bi.bob</file>
@@ -40,7 +40,7 @@
         <S>T01_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>12</y>
+      <y>22</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -52,7 +52,7 @@
         <S>T02_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>42</y>
+      <y>52</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -64,7 +64,7 @@
         <S>T03_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>72</y>
+      <y>82</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -76,7 +76,7 @@
         <S>T04_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>102</y>
+      <y>112</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -88,7 +88,7 @@
         <S>T05_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>132</y>
+      <y>142</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -100,7 +100,7 @@
         <S>T06_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>162</y>
+      <y>172</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -113,7 +113,7 @@
         <S>FlowOK</S>
       </macros>
       <x>12</x>
-      <y>192</y>
+      <y>202</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -126,7 +126,7 @@
         <S>FlowOK</S>
       </macros>
       <x>12</x>
-      <y>222</y>
+      <y>232</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -139,7 +139,7 @@
         <S>Flow</S>
       </macros>
       <x>12</x>
-      <y>252</y>
+      <y>262</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -152,7 +152,19 @@
         <S>Flow</S>
       </macros>
       <x>12</x>
-      <y>282</y>
+      <y>292</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_45</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -186,7 +198,7 @@
       <R>PSC2:</R>
     </macros>
     <x>410</x>
-    <y>390</y>
+    <y>400</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -208,7 +220,7 @@
       <R>PSC3:</R>
     </macros>
     <x>410</x>
-    <y>800</y>
+    <y>820</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -232,9 +244,9 @@
       <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>390</y>
+    <y>400</y>
     <width>400</width>
-    <height>410</height>
+    <height>420</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
       <file>_plc_bi.bob</file>
@@ -242,7 +254,7 @@
         <S>T01_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>12</y>
+      <y>22</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -254,7 +266,7 @@
         <S>T02_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>42</y>
+      <y>52</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -266,7 +278,7 @@
         <S>T03_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>72</y>
+      <y>82</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -278,7 +290,7 @@
         <S>T04_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>102</y>
+      <y>112</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -290,7 +302,7 @@
         <S>T05_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>132</y>
+      <y>142</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -302,7 +314,7 @@
         <S>T06_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>162</y>
+      <y>172</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -314,7 +326,7 @@
         <S>T10_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>282</y>
+      <y>292</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -326,7 +338,7 @@
         <S>T09_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>252</y>
+      <y>262</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -338,7 +350,7 @@
         <S>T08_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>222</y>
+      <y>232</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -350,7 +362,7 @@
         <S>T07_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>192</y>
+      <y>202</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -363,7 +375,7 @@
         <S>FlowOK</S>
       </macros>
       <x>12</x>
-      <y>312</y>
+      <y>322</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -376,7 +388,19 @@
         <S>Flow</S>
       </macros>
       <x>12</x>
-      <y>342</y>
+      <y>352</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_44</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -390,9 +414,9 @@
       <R>$(DEV):</R>
     </macros>
     <x>10</x>
-    <y>800</y>
+    <y>820</y>
     <width>400</width>
-    <height>410</height>
+    <height>420</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
       <file>_plc_bi.bob</file>
@@ -400,7 +424,7 @@
         <S>T01_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>12</y>
+      <y>22</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -412,7 +436,7 @@
         <S>T02_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>42</y>
+      <y>52</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -424,7 +448,7 @@
         <S>T03_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>72</y>
+      <y>82</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -436,7 +460,7 @@
         <S>T04_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>102</y>
+      <y>112</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -448,7 +472,7 @@
         <S>T05_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>132</y>
+      <y>142</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -460,7 +484,7 @@
         <S>T06_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>162</y>
+      <y>172</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -472,7 +496,7 @@
         <S>T10_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>282</y>
+      <y>292</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -484,7 +508,7 @@
         <S>T09_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>252</y>
+      <y>262</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -496,7 +520,7 @@
         <S>T08_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>222</y>
+      <y>232</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -508,7 +532,7 @@
         <S>T07_Interlock_BM</S>
       </macros>
       <x>12</x>
-      <y>192</y>
+      <y>202</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -521,7 +545,7 @@
         <S>FlowOK</S>
       </macros>
       <x>12</x>
-      <y>312</y>
+      <y>322</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -534,7 +558,19 @@
         <S>Flow</S>
       </macros>
       <x>12</x>
-      <y>342</y>
+      <y>352</y>
+      <width>350</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_43</name>
+      <file>_plc_title.bob</file>
+      <macros>
+        <S>T01_Interlock_BM</S>
+      </macros>
+      <x>12</x>
+      <y>2</y>
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
@@ -546,7 +582,7 @@
       <R>FASTPS1:</R>
     </macros>
     <x>410</x>
-    <y>470</y>
+    <y>480</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -568,7 +604,7 @@
       <R>FASTPS2:</R>
     </macros>
     <x>410</x>
-    <y>550</y>
+    <y>560</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -590,7 +626,7 @@
       <R>FASTPS3:</R>
     </macros>
     <x>410</x>
-    <y>880</y>
+    <y>900</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -612,7 +648,7 @@
       <R>FASTPS4:</R>
     </macros>
     <x>410</x>
-    <y>960</y>
+    <y>980</y>
     <width>400</width>
     <height>80</height>
     <widget type="embedded" version="2.0.0">
@@ -661,8 +697,8 @@
     </actions>
     <pv_name>$(P)LATCH:Reset</pv_name>
     <text>Latch reset</text>
-    <x>820</x>
-    <y>710</y>
+    <x>420</x>
+    <y>1200</y>
     <tooltip>$(actions)</tooltip>
   </widget>
 </display>
