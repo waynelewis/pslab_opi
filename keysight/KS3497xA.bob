@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>34972A $(P)$(R)</name>
+  <width>1000</width>
+  <height>1200</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Keysight 34972A - $(P)$(R)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>20</x>
+    <y>50</y>
+    <width>250</width>
+    <height>580</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Monitor</text>
+    <x>30</x>
+    <y>60</y>
+    <width>52</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Enable</text>
+    <x>30</x>
+    <y>90</y>
+    <width>44</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button</name>
+    <pv_name>$(P)$(R)Monitor_CMD</pv_name>
+    <x>120</x>
+    <y>90</y>
+    <width>90</width>
+    <height>20</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Value</text>
+    <x>30</x>
+    <y>120</y>
+    <width>36</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Monitor_RBV</pv_name>
+    <x>120</x>
+    <y>120</y>
+    <width>90</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Select</text>
+    <x>30</x>
+    <y>150</y>
+    <width>39</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button</name>
+    <pv_name>$(P)$(R)Card1MonSelect01_16</pv_name>
+    <x>120</x>
+    <y>170</y>
+    <width>120</width>
+    <height>390</height>
+    <items>
+      <item>Channel 1</item>
+      <item>Channel 2</item>
+      <item>Channel 3</item>
+      <item>Channel 4</item>
+      <item>Channel 5</item>
+      <item>Channel 6</item>
+      <item>Channel 7</item>
+      <item>Channel 8</item>
+      <item>Channel 9</item>
+      <item>Channel 10</item>
+      <item>Channel 11</item>
+      <item>Channel 12</item>
+      <item>Channel 13</item>
+      <item>Channel 14</item>
+      <item>Channel 15</item>
+      <item>Channel 16</item>
+    </items>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Slot 100</text>
+    <x>120</x>
+    <y>150</y>
+    <width>52</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>290</x>
+    <y>646</y>
+    <width>330</width>
+    <height>350</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <width>330</width>
+      <height>350</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>Trigger source</text>
+      <x>10</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Scan interval</text>
+      <x>10</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Scan count</text>
+      <x>10</x>
+      <y>100</y>
+      <width>71</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>$(P)$(R)TrigSrc_SEL</pv_name>
+      <x>130</x>
+      <y>40</y>
+      <height>16</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(P)$(R)ScanInterval_SP</pv_name>
+      <x>130</x>
+      <y>70</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>$(P)$(R)ScanCount_SP</pv_name>
+      <x>130</x>
+      <y>100</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Scan continuously</text>
+      <x>10</x>
+      <y>130</y>
+      <width>114</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box</name>
+      <pv_name>$(P)$(R)ScanContinuous_SEL</pv_name>
+      <label></label>
+      <x>130</x>
+      <y>130</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>Data points stored</text>
+      <x>10</x>
+      <y>160</y>
+      <width>114</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>$(P)$(R)NumDataPoints_RBV</pv_name>
+      <x>130</x>
+      <y>160</y>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)ScanStart_CMD</pv_name>
+      <text>START</text>
+      <x>130</x>
+      <y>190</y>
+      <height>20</height>
+      <background_color>
+        <color name="Off" red="60" green="100" blue="60">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)ScanAbort_CMD</pv_name>
+      <text>ABORT</text>
+      <x>130</x>
+      <y>226</y>
+      <height>20</height>
+      <background_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Scan control</text>
+      <x>10</x>
+      <y>10</y>
+      <width>230</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P)$(R)Scan_STS</pv_name>
+      <x>130</x>
+      <y>256</y>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>Scan status</text>
+      <x>10</x>
+      <y>256</y>
+      <width>74</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>20</x>
+    <y>646</y>
+    <width>250</width>
+    <height>350</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <width>250</width>
+      <height>350</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>/usr/local/epics/R3.15.4/modules/soft/synApps_5_8/support/asyn4-30/opi/boy/asynRecord.opi</file>
+          <macros>
+            <P>$(P)</P>
+            <R>$(R)Asyn</R>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>asyn record...</text>
+      <x>10</x>
+      <y>310</y>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Controller</text>
+      <x>10</x>
+      <y>10</y>
+      <width>230</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P)$(R)SN_RBV</pv_name>
+      <x>130</x>
+      <y>40</y>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Serial number</text>
+      <x>10</x>
+      <y>40</y>
+      <width>88</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>Model</text>
+      <x>10</x>
+      <y>70</y>
+      <width>39</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P)$(R)Model_RBV</pv_name>
+      <x>130</x>
+      <y>70</y>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>Card 1</text>
+      <x>10</x>
+      <y>100</y>
+      <width>43</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)$(R)Card1Type_RBV</pv_name>
+      <x>130</x>
+      <y>100</y>
+      <width>90</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)$(R)Card2Type_RBV</pv_name>
+      <x>130</x>
+      <y>130</y>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>Card 2</text>
+      <x>10</x>
+      <y>130</y>
+      <width>43</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P)$(R)Card3Type_RBV</pv_name>
+      <x>130</x>
+      <y>160</y>
+      <width>90</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Card 3</text>
+      <x>10</x>
+      <y>160</y>
+      <width>43</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>Current status message</text>
+      <x>10</x>
+      <y>190</y>
+      <width>149</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P)$(R)ErrorMessage_RBV</pv_name>
+      <x>10</x>
+      <y>206</y>
+      <width>210</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>Last error message</text>
+      <x>10</x>
+      <y>240</y>
+      <width>121</width>
+      <height>16</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P)$(R)LastErrorMessage_RBV</pv_name>
+      <x>10</x>
+      <y>256</y>
+      <width>210</width>
+    </widget>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Slot 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_32</name>
+            <file>_KS3497xA_16_channels.bob</file>
+            <macros>
+              <Slot>1</Slot>
+            </macros>
+            <x>10</x>
+            <width>670</width>
+            <height>530</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Slot 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_33</name>
+            <file>_KS3497xA_16_channels.bob</file>
+            <macros>
+              <Slot>2</Slot>
+            </macros>
+            <x>8</x>
+            <y>1</y>
+            <width>670</width>
+            <height>530</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Slot 3</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_34</name>
+            <file>_KS3497xA_16_channels.bob</file>
+            <macros>
+              <Slot>3</Slot>
+            </macros>
+            <x>8</x>
+            <y>1</y>
+            <width>670</width>
+            <height>530</height>
+            <resize>2</resize>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>280</x>
+    <y>50</y>
+    <width>690</width>
+    <height>580</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>640</x>
+    <y>646</y>
+    <width>330</width>
+    <height>350</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_4</name>
+      <width>330</width>
+      <height>350</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Plots</text>
+      <x>10</x>
+      <y>10</y>
+      <width>60</width>
+      <height>16</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="open_display">
+          <file>/usr/local/epics/R3.15.4/modules/soft/synApps_5_8/support/asyn4-30/opi/boy/asynRecord.opi</file>
+          <macros>
+            <P>$(P)</P>
+            <R>$(R)Asyn</R>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Slot 1...</text>
+      <x>10</x>
+      <y>40</y>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="open_display">
+          <file>/usr/local/epics/R3.15.4/modules/soft/synApps_5_8/support/asyn4-30/opi/boy/asynRecord.opi</file>
+          <macros>
+            <P>$(P)</P>
+            <R>$(R)Asyn</R>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Slot 2...</text>
+      <x>10</x>
+      <y>70</y>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_display">
+          <file>/usr/local/epics/R3.15.4/modules/soft/synApps_5_8/support/asyn4-30/opi/boy/asynRecord.opi</file>
+          <macros>
+            <P>$(P)</P>
+            <R>$(R)Asyn</R>
+          </macros>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Slot 3...</text>
+      <x>10</x>
+      <y>100</y>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>
