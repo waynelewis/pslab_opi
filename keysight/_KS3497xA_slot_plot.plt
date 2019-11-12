@@ -66,9 +66,9 @@
   </annotations>
   <pvlist>
     <pv>
-      <display_name>$(P)$(R)Ch$(Slot)01_RBV</display_name>
+      <display_name>MMT:MUX1:Ch101_RBV</display_name>
       <visible>true</visible>
-      <name>$(P)$(R)Ch$(Slot)01_RBV</name>
+      <name>MMT:MUX1:Ch101_RBV</name>
       <axis>0</axis>
       <color>
         <red>255</red>
