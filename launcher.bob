@@ -249,4 +249,23 @@
     <width>90</width>
     <tooltip>$(actions)</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_13</name>
+    <actions>
+      <action type="open_display">
+        <file>temperature_plots.bob</file>
+        <macros>
+          <P>MMT:</P>
+          <R>MUX1:</R>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>MUX1 - plots</text>
+    <x>390</x>
+    <y>90</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>

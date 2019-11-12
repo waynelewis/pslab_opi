@@ -7,23 +7,16 @@
     <name>Label</name>
     <class>TITLE</class>
     <text>Keysight 34972A - $(P)$(R)</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>550</width>
     <height>31</height>
-    <font use_class="true">
+    <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
       <color name="Header_Background" red="77" green="77" blue="77">
       </color>
     </background_color>
-    <transparent use_class="true">true</transparent>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
@@ -529,102 +522,5 @@
     <y>50</y>
     <width>690</width>
     <height>580</height>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>640</x>
-    <y>646</y>
-    <width>330</width>
-    <height>350</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_4</name>
-      <width>330</width>
-      <height>350</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="Grid" red="128" green="128" blue="128">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
-        </color>
-      </background_color>
-      <corner_width>5</corner_width>
-      <corner_height>5</corner_height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_22</name>
-      <text>Plots</text>
-      <x>10</x>
-      <y>10</y>
-      <width>60</width>
-      <height>16</height>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_3</name>
-      <actions>
-        <action type="open_display">
-          <file>_KS3497xA_slot_plot.bob</file>
-          <macros>
-            <P>$(P)</P>
-            <R>$(R)</R>
-            <Slot>1</Slot>
-          </macros>
-          <target>tab</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>Slot 1...</text>
-      <x>10</x>
-      <y>40</y>
-      <height>20</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_4</name>
-      <actions>
-        <action type="open_display">
-          <file>_KS3497xA_slot_plot.bob</file>
-          <macros>
-            <P>$(P)</P>
-            <R>$(R)</R>
-            <Slot>2</Slot>
-          </macros>
-          <target>tab</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>Slot 2...</text>
-      <x>10</x>
-      <y>70</y>
-      <height>20</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
-      <actions>
-        <action type="open_display">
-          <file>_KS3497xA_slot_plot.bob</file>
-          <macros>
-            <P>$(P)</P>
-            <R>$(R)</R>
-            <Slot>3</Slot>
-          </macros>
-          <target>tab</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>Slot 3...</text>
-      <x>10</x>
-      <y>100</y>
-      <height>20</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
   </widget>
 </display>
