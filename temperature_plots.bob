@@ -41,7 +41,7 @@
       <name>Action Button_3</name>
       <actions>
         <action type="open_display">
-          <file>keysight/_KS3497xA_slot_plot.bob</file>
+          <file>keysight/KS3497xA_slot_plot.bob</file>
           <macros>
             <P>$(P)</P>
             <R>$(R)</R>
@@ -61,7 +61,7 @@
       <name>Action Button_4</name>
       <actions>
         <action type="open_display">
-          <file>keysight/_KS3497xA_slot_plot.bob</file>
+          <file>keysight/KS3497xA_slot_plot.bob</file>
           <macros>
             <P>$(P)</P>
             <R>$(R)</R>
@@ -81,7 +81,7 @@
       <name>Action Button_5</name>
       <actions>
         <action type="open_display">
-          <file>keysight/_KS3497xA_slot_plot.bob</file>
+          <file>keysight/KS3497xA_slot_plot.bob</file>
           <macros>
             <P>$(P)</P>
             <R>$(R)</R>
