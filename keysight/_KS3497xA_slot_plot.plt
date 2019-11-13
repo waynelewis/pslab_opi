@@ -66,9 +66,9 @@
   </annotations>
   <pvlist>
     <pv>
-      <display_name>MMT:MUX1:Ch101_RBV</display_name>
+      <display_name>$(P)$(R)Ch$(Slot)01_RBV</display_name>
       <visible>true</visible>
-      <name>MMT:MUX1:Ch101_RBV</name>
+      <name>$(P)$(R)Ch$(Slot)01_RBV</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -109,12 +109,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -137,12 +133,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -165,12 +157,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -193,12 +181,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -221,12 +205,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -249,12 +229,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -277,12 +253,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -305,12 +277,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -333,12 +301,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -361,12 +325,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -389,12 +349,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -417,12 +373,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -445,12 +397,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -473,12 +421,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -501,12 +445,8 @@
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Accelerator</name>
-        <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
-      </archive>
-      <archive>
-        <name>Instruments</name>
-        <url>jdbc:oracle:thin:@snsoroda-scan.sns.gov:1521/scprod_controls</url>
+        <name>MMT</name>
+        <url>pbraw://localhost:17668/retrieval</url>
       </archive>
     </pv>
   </pvlist>
