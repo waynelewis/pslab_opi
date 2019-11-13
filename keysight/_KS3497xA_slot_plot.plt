@@ -84,6 +84,10 @@
       <period>0.0</period>
       <ring_size>5000</ring_size>
       <request>OPTIMIZED</request>
+      <archive>
+        <name>MMT</name>
+		<url>pbraw://localhost:17668/retrieval</url>
+      </archive>
     </pv>
     <pv>
       <display_name>$(P)$(R)Ch$(Slot)02_RBV</display_name>
