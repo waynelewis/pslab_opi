@@ -86,7 +86,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -110,7 +110,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -134,7 +134,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -158,7 +158,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -182,7 +182,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -206,7 +206,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://localhost:17668/retrieval</url>
+		<url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -230,7 +230,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -254,7 +254,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -278,7 +278,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -302,7 +302,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -326,7 +326,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -350,7 +350,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -374,7 +374,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -398,7 +398,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -422,7 +422,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -446,7 +446,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://localhost:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
   </pvlist>
