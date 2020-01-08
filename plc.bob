@@ -637,7 +637,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_48</name>
-      <file>_plc_bi.bob</file>
+      <file>_plc_bi_inverted.bob</file>
       <macros>
         <S>Pwr_Status_BM</S>
       </macros>
@@ -671,7 +671,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_49</name>
-      <file>_plc_bi.bob</file>
+      <file>_plc_bi_inverted.bob</file>
       <macros>
         <S>Pwr_Status_BM</S>
       </macros>
@@ -705,7 +705,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_51</name>
-      <file>_plc_bi.bob</file>
+      <file>_plc_bi_inverted.bob</file>
       <macros>
         <S>Pwr_Status_BM</S>
       </macros>
@@ -739,7 +739,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_52</name>
-      <file>_plc_bi.bob</file>
+      <file>_plc_bi_inverted.bob</file>
       <macros>
         <S>Pwr_Status_BM</S>
       </macros>
@@ -773,7 +773,7 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_46</name>
-      <file>_plc_bi.bob</file>
+      <file>_plc_bi_inverted.bob</file>
       <macros>
         <S>Pwr_Status_BM</S>
       </macros>
