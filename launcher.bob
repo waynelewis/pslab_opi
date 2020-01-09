@@ -250,6 +250,25 @@
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
+    <name>Action Button_FastPS6</name>
+    <actions>
+      <action type="open_display">
+        <file>CaenFastPS.bob</file>
+        <macros>
+          <P>fastps:</P>
+          <R>6:</R>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Fast-PS 6</text>
+    <x>130</x>
+    <y>250</y>
+    <width>90</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
     <name>Action Button_13</name>
     <actions>
       <action type="open_display">
