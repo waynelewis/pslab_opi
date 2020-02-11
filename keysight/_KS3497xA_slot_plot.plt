@@ -2,7 +2,7 @@
 <databrowser>
   <title></title>
   <show_toolbar>true</show_toolbar>
-  <update_period>3.0</update_period>
+  <update_period>1.0</update_period>
   <scroll_step>5</scroll_step>
   <scroll>true</scroll>
   <start>-30 minutes</start>
@@ -38,25 +38,8 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>0.0</min>
-      <max>10.0</max>
-      <grid>false</grid>
-      <autoscale>true</autoscale>
-      <log_scale>false</log_scale>
-    </axis>
-    <axis>
-      <visible>false</visible>
-      <name>Value 1</name>
-      <use_axis_name>false</use_axis_name>
-      <use_trace_names>true</use_trace_names>
-      <right>false</right>
-      <color>
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
-      </color>
-      <min>0.0</min>
-      <max>10.0</max>
+      <min>20.0</min>
+      <max>30.0</max>
       <grid>false</grid>
       <autoscale>false</autoscale>
       <log_scale>false</log_scale>
@@ -77,7 +60,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -86,7 +68,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -101,7 +83,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -110,7 +91,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -125,7 +106,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -134,7 +114,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -149,7 +129,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -158,7 +137,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -173,7 +152,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -182,7 +160,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -197,7 +175,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -206,7 +183,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-		<url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://pwrsupplylab:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -221,7 +198,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -245,7 +221,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -269,7 +244,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -293,7 +267,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -317,7 +290,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -341,7 +313,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -365,7 +336,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -389,7 +359,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -413,7 +382,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
@@ -437,7 +405,6 @@
       </color>
       <trace_type>AREA</trace_type>
       <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
