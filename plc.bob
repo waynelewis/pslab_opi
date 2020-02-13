@@ -30,6 +30,8 @@
       <FM1>$(DEV)_FM1:</FM1>
       <FM2>$(DEV)_FM2:</FM2>
       <R>$(DEV):</R>
+      <S>Flow</S>
+      <SP>Setpoint</SP>
     </macros>
     <x>10</x>
     <y>40</y>
@@ -157,6 +159,8 @@
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
+      <actions>
+      </actions>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_42</name>
@@ -429,6 +433,13 @@
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
+      <actions>
+        <action type="open_display">
+          <file>plc_settings.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_39</name>
@@ -442,6 +453,8 @@
       <width>350</width>
       <height>20</height>
       <resize>2</resize>
+      <actions>
+      </actions>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -797,6 +810,21 @@
     <text>Latch reset</text>
     <x>420</x>
     <y>1200</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>plc_settings.bob</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <pv_name>$(P)LATCH:Reset</pv_name>
+    <text>Flow setpoints</text>
+    <x>420</x>
+    <y>1160</y>
     <tooltip>$(actions)</tooltip>
   </widget>
 </display>

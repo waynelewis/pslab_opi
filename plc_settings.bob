@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PLC Setpoints</name>
+  <width>490</width>
+  <height>310</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>PLC Setpoints  - $(P)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>490</width>
+    <height>30</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <DEV>DIPB1</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <FM2>$(DEV)_FM2:</FM2>
+      <R>$(DEV):</R>
+      <S>Flow</S>
+      <SP>Setpoint</SP>
+    </macros>
+    <x>10</x>
+    <y>40</y>
+    <width>480</width>
+    <height>110</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_42</name>
+      <file>_plc_ai_sp.bob</file>
+      <macros>
+        <R>$(FM2)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>52</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <file>_plc_ai_title.bob</file>
+      <x>12</x>
+      <y>2</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_41</name>
+      <file>_plc_ai_sp.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>22</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(R)</name>
+    <macros>
+      <DEV>QFC1</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <R>$(DEV):</R>
+      <S>Flow</S>
+      <SP>Setpoint</SP>
+    </macros>
+    <x>10</x>
+    <y>150</y>
+    <width>480</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <file>_plc_ai_title.bob</file>
+      <x>12</x>
+      <y>2</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_39</name>
+      <file>_plc_ai_sp.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+        <SP>Setpoint</SP>
+      </macros>
+      <x>12</x>
+      <y>22</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>QFC2:</name>
+    <macros>
+      <DEV>QFC2</DEV>
+      <FM1>$(DEV)_FM1:</FM1>
+      <R>$(DEV):</R>
+      <S>Flow</S>
+      <SP>Setpoint</SP>
+    </macros>
+    <x>10</x>
+    <y>230</y>
+    <width>480</width>
+    <height>80</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <file>_plc_ai_title.bob</file>
+      <x>12</x>
+      <y>2</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_53</name>
+      <file>_plc_ai_sp.bob</file>
+      <macros>
+        <R>$(FM1)</R>
+        <S>Flow</S>
+      </macros>
+      <x>12</x>
+      <y>22</y>
+      <width>430</width>
+      <height>20</height>
+      <resize>2</resize>
+    </widget>
+  </widget>
+</display>
