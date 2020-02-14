@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>PLC</name>
-  <width>850</width>
+  <width>950</width>
   <height>1300</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -181,8 +181,8 @@
     <macros>
       <R>PSC1:</R>
     </macros>
-    <x>410</x>
-    <y>40</y>
+    <x>520</x>
+    <y>120</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -215,8 +215,8 @@
     <macros>
       <R>PSC2:</R>
     </macros>
-    <x>410</x>
-    <y>400</y>
+    <x>510</x>
+    <y>440</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -249,8 +249,8 @@
     <macros>
       <R>PSC3:</R>
     </macros>
-    <x>410</x>
-    <y>820</y>
+    <x>510</x>
+    <y>860</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -632,8 +632,8 @@
     <macros>
       <R>FASTPS1:</R>
     </macros>
-    <x>410</x>
-    <y>510</y>
+    <x>510</x>
+    <y>550</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -666,8 +666,8 @@
     <macros>
       <R>FASTPS2:</R>
     </macros>
-    <x>410</x>
-    <y>620</y>
+    <x>510</x>
+    <y>660</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -700,8 +700,8 @@
     <macros>
       <R>FASTPS3:</R>
     </macros>
-    <x>410</x>
-    <y>930</y>
+    <x>510</x>
+    <y>970</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -734,8 +734,8 @@
     <macros>
       <R>FASTPS4:</R>
     </macros>
-    <x>410</x>
-    <y>1040</y>
+    <x>510</x>
+    <y>1080</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -768,8 +768,8 @@
     <macros>
       <R>FASTPS5:</R>
     </macros>
-    <x>410</x>
-    <y>150</y>
+    <x>520</x>
+    <y>230</y>
     <width>400</width>
     <height>110</height>
     <widget type="embedded" version="2.0.0">
@@ -808,8 +808,8 @@
     </actions>
     <pv_name>$(P)LATCH:Reset</pv_name>
     <text>Latch reset</text>
-    <x>420</x>
-    <y>1200</y>
+    <x>130</x>
+    <y>1240</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -823,8 +823,98 @@
     </actions>
     <pv_name>$(P)LATCH:Reset</pv_name>
     <text>Flow setpoints</text>
-    <x>420</x>
-    <y>1160</y>
+    <x>20</x>
+    <y>1240</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)DIPB1:Enable</pv_name>
+    <text>Enable</text>
+    <x>410</x>
+    <y>190</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)QFC1:Enable</pv_name>
+    <text>Enable</text>
+    <x>410</x>
+    <y>570</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)QFC2:Enable</pv_name>
+    <text>Enable</text>
+    <x>410</x>
+    <y>990</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)DIPB1:Disable</pv_name>
+    <text>Disable</text>
+    <x>410</x>
+    <y>230</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)QFC1:Disable</pv_name>
+    <text>Disable</text>
+    <x>410</x>
+    <y>610</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_7</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>$(P)QFC2:Disable</pv_name>
+    <text>Disable</text>
+    <x>410</x>
+    <y>1030</y>
     <tooltip>$(actions)</tooltip>
   </widget>
 </display>
