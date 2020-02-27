@@ -227,7 +227,7 @@
     <text>PLC1</text>
     <x>540</x>
     <y>50</y>
-    <width>90</width>
+    <width>130</width>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -283,6 +283,24 @@
     </actions>
     <text>MUX1 - plots</text>
     <x>390</x>
+    <y>90</y>
+    <width>130</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_14</name>
+    <actions>
+      <action type="open_display">
+        <file>plc/plc_plots.bob</file>
+        <macros>
+          <P>MMT:</P>
+        </macros>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>PLC1 - plots</text>
+    <x>540</x>
     <y>90</y>
     <width>130</width>
     <tooltip>$(actions)</tooltip>
