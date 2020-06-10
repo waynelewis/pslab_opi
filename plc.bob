@@ -630,7 +630,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>FASTPS1:</R>
+      <R>P4:</R>
     </macros>
     <x>510</x>
     <y>550</y>
@@ -698,7 +698,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>FASTPS3:</R>
+      <R>P6:</R>
     </macros>
     <x>510</x>
     <y>970</y>
@@ -766,7 +766,7 @@
   <widget type="group" version="2.0.0">
     <name>$(R)</name>
     <macros>
-      <R>FASTPS5:</R>
+      <R>P8:</R>
     </macros>
     <x>520</x>
     <y>230</y>
