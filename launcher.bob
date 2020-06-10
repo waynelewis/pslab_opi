@@ -305,4 +305,45 @@
     <width>130</width>
     <tooltip>$(actions)</tooltip>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_15</name>
+    <actions>
+      <action type="open_display">
+        <file>asyn/asynRecord.opi</file>
+        <macros>
+          <P>fastps:1:</P>
+          <R>asyn</R>
+        </macros>
+        <target>tab</target>
+        <description>FastPS1</description>
+      </action>
+      <action type="open_display">
+        <file>asyn/asynRecord.opi</file>
+        <macros>
+          <P>fastps:2:</P>
+          <R>asyn</R>
+        </macros>
+        <target>tab</target>
+        <description>FastPS2</description>
+      </action>
+      <action type="open_display">
+        <file>asyn/asynRecord.opi</file>
+        <macros>
+          <P>fastps:5:</P>
+          <R>asyn</R>
+        </macros>
+        <target>tab</target>
+        <description>FastPS5</description>
+      </action>
+    </actions>
+    <text>asyn record</text>
+    <x>130</x>
+    <y>290</y>
+    <width>90</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
