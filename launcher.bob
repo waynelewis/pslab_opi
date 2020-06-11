@@ -388,4 +388,27 @@
     <width>130</width>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_16</name>
+    <actions>
+      <action type="open_display">
+        <file>asyn/asynRecord.opi</file>
+        <macros>
+          <P>DMM:22:</P>
+          <R>asyn</R>
+        </macros>
+        <target>tab</target>
+        <description>DMM:22</description>
+      </action>
+    </actions>
+    <text>asyn record</text>
+    <x>240</x>
+    <y>150</y>
+    <width>130</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>
