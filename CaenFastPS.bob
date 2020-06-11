@@ -110,8 +110,8 @@
       <name>EDM Label</name>
       <text>Error Code:</text>
       <y>1</y>
-      <width>80</width>
-      <height>18</height>
+      <width>73</width>
+      <height>14</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -232,8 +232,8 @@
       <name>EDM Label</name>
       <text>MRV:</text>
       <y>1</y>
-      <width>37</width>
-      <height>18</height>
+      <width>35</width>
+      <height>14</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -289,8 +289,7 @@
       <name>EDM Label</name>
       <text>Status Register:</text>
       <y>1</y>
-      <width>113</width>
-      <height>18</height>
+      <height>14</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -1836,5 +1835,33 @@
     <x>171</x>
     <y>150</y>
     <width>87</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Ramp SP I</text>
+    <x>375</x>
+    <y>120</y>
+    <width>87</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P)$(R)MWIR</pv_name>
+    <x>462</x>
+    <y>120</y>
+    <width>80</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Ramp Rate</text>
+    <x>375</x>
+    <y>150</y>
+    <width>87</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>$(P)$(R)MSRI</pv_name>
+    <x>462</x>
+    <y>150</y>
+    <width>80</width>
   </widget>
 </display>
