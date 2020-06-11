@@ -1849,6 +1849,7 @@
     <x>462</x>
     <y>120</y>
     <width>80</width>
+    <enabled>false</enabled>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
@@ -1863,5 +1864,6 @@
     <x>462</x>
     <y>150</y>
     <width>80</width>
+    <enabled>false</enabled>
   </widget>
 </display>
