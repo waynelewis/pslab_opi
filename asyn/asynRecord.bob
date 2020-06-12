@@ -1622,38 +1622,6 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="choice" version="2.0.0">
-    <name>Choice Button_1</name>
-    <pv_name>$(P)$(R).TIB0</pv_name>
-    <x>318</x>
-    <y>316</y>
-    <width>55</width>
-    <height>18</height>
-    <background_color>
-      <color name="Write_Background" red="128" green="255" blue="255">
-      </color>
-    </background_color>
-    <items>
-      <item>Item 1</item>
-      <item>Item 2</item>
-    </items>
-  </widget>
-  <widget type="choice" version="2.0.0">
-    <name>Choice Button_2</name>
-    <pv_name>$(P)$(R).TIB0</pv_name>
-    <x>318</x>
-    <y>339</y>
-    <width>55</width>
-    <height>18</height>
-    <background_color>
-      <color name="Write_Background" red="128" green="255" blue="255">
-      </color>
-    </background_color>
-    <items>
-      <item>Item 1</item>
-      <item>Item 2</item>
-    </items>
-  </widget>
-  <widget type="choice" version="2.0.0">
     <name>Choice Button_3</name>
     <pv_name>$(P)$(R).TIB0</pv_name>
     <x>228</x>
@@ -1664,6 +1632,30 @@ $(pv_value)</tooltip>
       <color name="Write_Background" red="128" green="255" blue="255">
       </color>
     </background_color>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button</name>
+    <pv_name>$(P)$(R).TIB0</pv_name>
+    <x>305</x>
+    <y>316</y>
+    <width>157</width>
+    <height>23</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="radio" version="2.0.0">
+    <name>Radio Button_1</name>
+    <pv_name>$(P)$(R).TIB1</pv_name>
+    <x>305</x>
+    <y>339</y>
+    <width>157</width>
+    <height>23</height>
     <items>
       <item>Item 1</item>
       <item>Item 2</item>
