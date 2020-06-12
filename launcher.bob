@@ -293,7 +293,7 @@
     <name>Action Button_15</name>
     <actions>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>$(Sys):P4:</P>
           <R>asyn</R>
@@ -302,7 +302,7 @@
         <description>P4</description>
       </action>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>$(Sys):P5:</P>
           <R>asyn</R>
@@ -311,7 +311,7 @@
         <description>P5</description>
       </action>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>$(Sys):P6:</P>
           <R>asyn</R>
@@ -320,7 +320,7 @@
         <description>P6</description>
       </action>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>$(Sys):P7:</P>
           <R>asyn</R>
@@ -329,7 +329,7 @@
         <description>P7</description>
       </action>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>$(Sys):P8:</P>
           <R>asyn</R>
@@ -392,7 +392,7 @@
     <name>Action Button_16</name>
     <actions>
       <action type="open_display">
-        <file>asyn/asynRecord.bob</file>
+        <file>asyn/asynRecord.opi</file>
         <macros>
           <P>DMM:22:</P>
           <R>asyn</R>
