@@ -111,7 +111,7 @@
       <text>Error Code:</text>
       <y>1</y>
       <width>73</width>
-      <height>14</height>
+      <height>16</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -233,7 +233,7 @@
       <text>MRV:</text>
       <y>1</y>
       <width>35</width>
-      <height>14</height>
+      <height>16</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -289,7 +289,7 @@
       <name>EDM Label</name>
       <text>Status Register:</text>
       <y>1</y>
-      <height>14</height>
+      <height>16</height>
       <font>
         <font family="helvetica" style="REGULAR" size="14.0">
         </font>
@@ -1849,7 +1849,6 @@
     <x>462</x>
     <y>120</y>
     <width>80</width>
-    <enabled>false</enabled>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
@@ -1864,6 +1863,5 @@
     <x>462</x>
     <y>150</y>
     <width>80</width>
-    <enabled>false</enabled>
   </widget>
 </display>
