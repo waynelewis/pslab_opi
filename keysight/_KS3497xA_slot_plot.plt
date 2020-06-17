@@ -395,7 +395,7 @@
     </pv>
     <pv>
       <display_name>$(P)$(R)Ch$(Slot)16_RBV</display_name>
-      <visible>true</visible>
+      <visible>false</visible>
       <name>$(P)$(R)Ch$(Slot)16_RBV</name>
       <axis>0</axis>
       <color>
