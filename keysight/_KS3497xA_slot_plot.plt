@@ -68,7 +68,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -91,7 +91,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -114,7 +114,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -137,7 +137,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -160,7 +160,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -183,7 +183,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -206,7 +206,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -229,7 +229,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -252,7 +252,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -275,7 +275,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -298,7 +298,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -321,7 +321,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -344,7 +344,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -367,7 +367,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -390,7 +390,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
     <pv>
@@ -413,7 +413,7 @@
       <request>OPTIMIZED</request>
       <archive>
         <name>MMT</name>
-        <url>pbraw://pwrsupplylab:17668/retrieval</url>
+        <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
       </archive>
     </pv>
   </pvlist>
