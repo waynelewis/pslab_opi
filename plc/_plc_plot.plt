@@ -179,7 +179,7 @@
       <waveform_index>0</waveform_index>
       <period>0.0</period>
       <ring_size>5000</ring_size>
-      <request>OPTIMIZED</request>
+      <request>RAW</request>
       <archive>
 	    <name>MMT</name>
         <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
@@ -203,7 +203,7 @@
       <waveform_index>0</waveform_index>
       <period>0.0</period>
       <ring_size>5000</ring_size>
-      <request>OPTIMIZED</request>
+      <request>RAW</request>
       <archive>
 	    <name>MMT</name>
         <url>pbraw://magtestlab.als.lbl.gov:17668/retrieval</url>
