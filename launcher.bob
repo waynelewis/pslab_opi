@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>PS Launcher</name>
   <macros>
-    <Sys>MMF-Raft1</Sys>
+    <SYSTEM>MMF-Raft1</SYSTEM>
   </macros>
   <height>900</height>
   <widget type="action_button" version="3.0.0">
@@ -13,7 +13,7 @@
         <macros>
           <iv>Volt</iv>
           <ivs>V</ivs>
-          <ps>bira1</ps>
+          <ps>$(SYSTEM):PSC1</ps>
           <vi>Curr</vi>
           <vis>I</vis>
         </macros>
@@ -21,7 +21,7 @@
         <description>Open Display</description>
       </action>
     </actions>
-    <text>BiRa 1</text>
+    <text>PSC1</text>
     <x>20</x>
     <y>70</y>
     <width>90</width>
@@ -29,7 +29,7 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <text>MMF Controls: $(Sys)</text>
+    <text>MMF Controls: $(SYSTEM)</text>
     <x>20</x>
     <y>10</y>
     <width>240</width>
@@ -48,7 +48,7 @@
         <macros>
           <iv>Volt</iv>
           <ivs>V</ivs>
-          <ps>bira2</ps>
+          <ps>$(SYSTEM):PSC2</ps>
           <vi>Curr</vi>
           <vis>I</vis>
         </macros>
@@ -56,7 +56,7 @@
         <description>Open Display</description>
       </action>
     </actions>
-    <text>BiRa 2</text>
+    <text>PSC2</text>
     <x>20</x>
     <y>110</y>
     <width>90</width>
@@ -68,7 +68,7 @@
       <action type="open_display">
         <file>CaenFastPS.bob</file>
         <macros>
-          <P>$(Sys)</P>
+          <P>$(SYSTEM)</P>
           <R>P4:</R>
         </macros>
         <target>tab</target>
@@ -82,30 +82,12 @@
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>Action Button_4</name>
-    <actions>
-      <action type="open_display">
-        <file>dmm_hp3458a.bob</file>
-        <macros>
-          <P>DMM:19:</P>
-        </macros>
-        <target>tab</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <text>DMM 3458A 19</text>
-    <x>240</x>
-    <y>70</y>
-    <width>130</width>
-    <tooltip>$(actions)</tooltip>
-  </widget>
-  <widget type="action_button" version="3.0.0">
     <name>Action Button_5</name>
     <actions>
       <action type="open_display">
         <file>dmm_hp3458a.bob</file>
         <macros>
-          <P>DMM:22:</P>
+          <P>$(SYSTEM):DMM1:</P>
         </macros>
         <target>tab</target>
         <description>Open Display</description>
@@ -113,7 +95,7 @@
     </actions>
     <text>DMM 3458A 22</text>
     <x>240</x>
-    <y>110</y>
+    <y>70</y>
     <width>130</width>
     <tooltip>$(actions)</tooltip>
   </widget>
@@ -125,7 +107,7 @@
         <macros>
           <iv>Volt</iv>
           <ivs>V</ivs>
-          <ps>bira3</ps>
+          <ps>$(SYSTEM):PSC3</ps>
           <vi>Curr</vi>
           <vis>I</vis>
         </macros>
@@ -133,7 +115,7 @@
         <description>Open Display</description>
       </action>
     </actions>
-    <text>BiRa 3</text>
+    <text>PSC3</text>
     <x>20</x>
     <y>150</y>
     <width>90</width>
@@ -145,7 +127,7 @@
       <action type="open_display">
         <file>CaenFastPS.bob</file>
         <macros>
-          <P>$(Sys):</P>
+          <P>$(SYSTEM):</P>
           <R>P5:</R>
         </macros>
         <target>tab</target>
@@ -164,7 +146,7 @@
       <action type="open_display">
         <file>CaenFastPS.bob</file>
         <macros>
-          <P>$(Sys):</P>
+          <P>$(SYSTEM):</P>
           <R>P6:</R>
         </macros>
         <target>tab</target>
@@ -183,7 +165,7 @@
       <action type="open_display">
         <file>CaenFastPS.bob</file>
         <macros>
-          <P>$(Sys):</P>
+          <P>$(SYSTEM):</P>
           <R>P7:</R>
         </macros>
         <target>tab</target>
@@ -202,7 +184,7 @@
       <action type="open_display">
         <file>keysight/KS3497xA.bob</file>
         <macros>
-          <P>MMT:</P>
+          <P>$(SYSTEM):</P>
           <R>MUX1:</R>
         </macros>
         <target>tab</target>
@@ -221,7 +203,7 @@
       <action type="open_display">
         <file>plc.bob</file>
         <macros>
-          <P>MMT:</P>
+          <P>$(SYSTEM):</P>
         </macros>
         <target>tab</target>
         <description>Open Display</description>
@@ -239,7 +221,7 @@
       <action type="open_display">
         <file>CaenFastPS.bob</file>
         <macros>
-          <P>$(Sys):</P>
+          <P>$(SYSTEM):</P>
           <R>P8:</R>
         </macros>
         <target>tab</target>
@@ -258,7 +240,7 @@
       <action type="open_display">
         <file>temperature_plots.bob</file>
         <macros>
-          <P>MMT:</P>
+          <P>$(SYSTEM):</P>
           <R>MUX1:</R>
         </macros>
         <target>tab</target>
@@ -277,7 +259,7 @@
       <action type="open_display">
         <file>plc/plc_plots.bob</file>
         <macros>
-          <P>MMT:</P>
+          <P>$(SYSTEM):</P>
         </macros>
         <target>tab</target>
         <description>Open Display</description>
@@ -295,7 +277,7 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>$(Sys):P4:</P>
+          <P>$(SYSTEM):P4:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
@@ -304,7 +286,7 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>$(Sys):P5:</P>
+          <P>$(SYSTEM):P5:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
@@ -313,7 +295,7 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>$(Sys):P6:</P>
+          <P>$(SYSTEM):P6:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
@@ -322,7 +304,7 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>$(Sys):P7:</P>
+          <P>$(SYSTEM):P7:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
@@ -331,7 +313,7 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>$(Sys):P8:</P>
+          <P>$(SYSTEM):P8:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
@@ -403,7 +385,7 @@
     </actions>
     <text>asyn record</text>
     <x>240</x>
-    <y>150</y>
+    <y>110</y>
     <width>130</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
