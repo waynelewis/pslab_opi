@@ -98,6 +98,7 @@
     <y>70</y>
     <width>130</width>
     <tooltip>$(actions)</tooltip>
+    <enabled>false</enabled>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_5</name>
@@ -105,13 +106,13 @@
       <action type="open_display">
         <file>dmm_hp3458a.bob</file>
         <macros>
-          <P>DMM:22:</P>
+          <P>MMF-Raft1:DMM1:</P>
         </macros>
         <target>tab</target>
         <description>Open Display</description>
       </action>
     </actions>
-    <text>DMM 3458A 22</text>
+    <text>MMF-Raft1:DMM1</text>
     <x>240</x>
     <y>110</y>
     <width>130</width>
@@ -394,11 +395,11 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>DMM:22:</P>
+          <P>MMF-Raft1:DMM1:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
-        <description>DMM:22</description>
+        <description>DMM1</description>
       </action>
     </actions>
     <text>asyn record</text>
