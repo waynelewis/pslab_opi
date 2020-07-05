@@ -376,11 +376,11 @@
       <action type="open_display">
         <file>asyn/asynRecord.opi</file>
         <macros>
-          <P>DMM:22:</P>
+          <P>$(SYSTEM):DMM1:</P>
           <R>asyn</R>
         </macros>
         <target>tab</target>
-        <description>DMM:22</description>
+        <description>$(SYSTEM):DMM1</description>
       </action>
     </actions>
     <text>asyn record</text>
